@@ -29,7 +29,7 @@ class UserForm2(Form):
     ])   
     nombre = StringField('nombre', [
         validators.DataRequired(message='El campo es requerido'),
-        validators.Length(min=4, max=10, message='Ingresa un nombre válido')
+        validators.Length(min=4, max=100, message='Ingresa un nombre válido')
     ])
     apaterno = StringField('apaterno', [
         validators.DataRequired(message='El campo es requerido'),
